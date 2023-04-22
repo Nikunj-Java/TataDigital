@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Simple web Development Template</title>
+ 
+    <style>
+        /*giving zero margin*/
+        * {
+            margin: 0;
+            padding: 0;
+        }
+ 
+        .navbar {
+            display: flex;
+            background-color: black;
+            align-items: center;
+            position: sticky;
+            cursor: pointer;
+            top: 0;
+        }
+ 
+        .nav-list {
+            width: 70%;
+            display: flex;
+            align-items: center;
+        }
+ 
+        .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+ 
+        .logo img {
+            width: 100px;
+            border-radius: 50px;
+        }
+        
+        /*for creating navigation color style*/
+        .nav-list li {
+            list-style: none;
+            padding: 26px 30px;
+        }
+    
+        .nav-list li a {
+            text-decoration: none;
+            color: white;
+        }
+    
+        .nav-list li a:hover {
+            color: grey;
+        }
+        /*ends here*/
+
+        /*Right Navigation*/
+        .rightnav {
+            width: 30%;
+            text-align: right;
+        }
+        #search {
+            padding: 5px;
+            font-size: 17px;
+            border: 2px solid grey;
+            border-radius: 9px;
+        }
+        .btn {
+            padding: 8px 20px;
+            margin: 7px 0;
+            border: 2px solid white;
+            border-radius: 8px;
+            background: none;
+            color: white;
+            cursor: pointer;
+        }
+        /*First and Second Section*/
+        
+        .firstsection {
+            background-color: sandybrown;
+            height: 400px;
+             
+            /*
+            1. Gradient: linear
+            background-color: red; 
+            background-image: linear-gradient(red, yellow);
+            2. left to right
+            background-image: linear-gradient(to right, red , yellow);
+            3. Direction Diagonal
+            background-image: linear-gradient(to bottom right, red, yellow);
+            4. using an Angle
+            background-image: linear-gradient(180deg, red, yellow);
+            5. using multiple colors
+            background-image: linear-gradient(red, yellow, green);
+            6. background-image: radial-gradient(red, yellow, sandybrown);
+            
+            */
+        }
+ 
+        .secondsection {
+            background-color: yellow;
+            height: 400px;
+        }
+        .thirdsection {
+            background-color: orange;
+            height: 400px;
+        }
+
+        
+        .box-main {
+            /* display: flex;
+            justify-content: center;
+            align-items: center; */
+            color: black;
+            max-width: 80%;
+            margin: auto;
+            height: 80%;
+        }
+        .firstHalf{
+            float: left;
+            margin-top: 50px;
+            margin-left: 50px;
+        }
+        .text-big {
+            font-family: 'Piazzolla', serif;
+            font-weight: bold;
+            font-size: 35px;
+        }
+    
+        .text-small {
+            font-size: 18px;
+        }
+        /* First and Second Section ends here*/
+
+        /*Thumbnail*/
+        .thumbnail img {
+            width: 250px;
+            border: 2px solid black;
+            border-radius: 26px;
+            margin-top: 19px;
+            float: right;
+           
+        }
+
+        /* footer*/
+        .background {
+            background: black;
+            background-blend-mode: darken;
+            background-size: cover;
+        }
+        .text-footer {
+            text-align: center;
+            padding: 30px 0;
+            font-family: 'Ubuntu', sans-serif;
+            display: flex;
+            justify-content: center;
+            color: white;
+        }
+
+        /*specificity example*/
+
+        .box-main p{
+            color: white;
+        }
+
+        .box-main .text-small{
+            color: grey;
+        }
+
+
+        
+    </style>
+</head>
+ 
+<body>
+    <nav class="navbar">
+        <ul class="nav-list">
+            <div class="logo">
+                <img  src= "D:\Reliance-TATA Digital\Nikunj Soni\LVC\CSS-1\google.png">
+            </div>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#web">Webtechnology</a></li>
+            <li><a href="#java">Java</a></li>
+        </ul>
+ 
+        <div class="rightNav">
+            <input type="text" name="search" id="search">
+            <button class="btn btn-sm">Search</button>
+        </div>
+    </nav>
+
+    <section class="firstsection">
+        <div class="box-main">
+            <div class="firstHalf">
+                <h1 class="text-big" id="home">HOME SECTION</h1>
+                <p class="text-small">
+                    THIS IS HOME SECTION
+                </p>
+ 
+ 
+            </div>
+        </div>
+    </section>
+
+    <section class="secondsection">
+        <div class="box-main">
+            <div class="firstHalf">
+                <h1 class="text-big" id="web">WEBTECHNOLOGY</h1>
+                <p class="text-small">
+                    THIS IS WEB TECHNOLOGY SECTION
+                </p>
+ 
+ 
+            </div>
+        </div>
+    </section>
+ 
+    <section class="thirdsection">
+        <div class="box-main">
+            <div class="firstHalf">
+                <h1 class="text-big" id="java">
+                    JAVA PROGRAMMING
+                </h1>
+                <p class="text-small">
+                    THIS IS JAVA PROGRAMMING SECTION
+                </p>
+ 
+ 
+            </div>
+            <div class="thumbnail">
+                <img src= "D:\Reliance-TATA Digital\Nikunj Soni\LVC\CSS-1\java.png" alt="laptop image">
+            </div>
+        </div>
+    </section>
+ 
+    <footer class="background">
+        <p class="text-footer">
+            Copyright ©-All rights are reserved | Prepared by : Nikunj Soni
+        </p>
+ 
+ 
+    </footer>
+ 
+     
+</body>
+ 
+</html>
