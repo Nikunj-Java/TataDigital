@@ -1,0 +1,41 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+header{
+    border-bottom:2px solid #eeeeee;
+    padding: 30px;
+}
+.lm{
+    float: left;
+    margin-top: -10px;
+}
+.logo{
+    background-color:#B01E68;
+    border:2px solid chartreuse;
+    border-radius: 100%;
+    padding: 10px;
+    color: aliceblue;
+}
+.rm{
+    float: right;
+    margin-top: -10px;
+}
+.rm span{
+    margin-right: 5px;
+}
+.rm a {
+    margin-right: 5px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    color:#B01E68;
+    font-size: 1.2em;
+}
+.rm a:hover{
+    background-color: #B01E68;
+    color: white;
+    padding: 5px;
+}
+.fa{
+    color: #B01E68;
+}

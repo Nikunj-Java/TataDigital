@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Effect</title>
+
+    <style>
+        p.test1{
+            white-space: nowrap;
+            width: 200px;
+            border: 2px solid red;
+            overflow: hidden;
+            text-overflow: clip;
+
+            /*
+            visible: default. the overflow is not clipped
+            hidden: the overflow is clipped
+            scroll: the overflow is clipped and a scrollbar is added
+            auto: simlar to scroll but it adds scrollbar only if neccessory
+            */
+        }
+
+        p.test2{
+            white-space: nowrap;
+            width: 200px;
+            border: 2px solid royalblue;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        p.test1:hover {
+            overflow: visible;
+        }
+
+        p.test2:hover {
+            overflow: visible;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <h1>The text-overflow Property</h1>
+
+    <p>This is paragraph 1</p>
+
+    <h2>The text-overflow property: clip</h2>
+    <p class="test1">This is paragraph 2 with some long and long text </p>
+    
+
+    <h2>The text-overflow property: ellipsis</h2>
+    <p class="test2">This is paragraph 2 with some long and long text </p>
+    
+</body>
+</html>

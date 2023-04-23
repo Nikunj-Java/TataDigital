@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        .navbar{
+            display: flex;
+            background-color: black;
+            align-items: center;
+            position: sticky;
+            cursor: pointer;
+            top:0;
+        }
+
+        .nav-list{
+            width: 70%;
+            display: flex;
+            align-items: center;
+        }
+        .logo{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .logo img{
+            width: 100px;
+            border-radius: 50px;
+        }
+
+        /* for creating navigation color style*/
+        .nav-list li {
+            list-style: none;
+            padding: 25px 30px;
+        }
+
+
+        .nav-list li a {
+            color: white;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 20pt;
+        }
+        .nav-list li a:hover{
+            color: gray;
+        }
+
+        /*Right Navigation*/
+        .rightnav{
+            width: 30%;
+            text-align: right;
+        }
+
+        #search{
+            padding:5px;
+            font-size: 17px;
+            border: 2px solid grey;
+            border-radius: 9px;
+        }
+
+        .btn{
+            padding: 8px 20px;
+            margin: 7px 0;
+            border: 2px solid white;
+            border-radius: 8px;
+            background: none;
+            color: white;
+            cursor: pointer;
+        }
+
+        /*Footer*/
+        .background{
+            background: black;
+            
+        }
+
+        .text-footer {
+            text-align: center;
+            padding:30px 0;
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            color: white;
+            justify-content: center;
+        }
+
+        .firstsection{
+            background-color: sandybrown;
+            height: 400px;
+        }
+        .secondsection{
+            background-color: yellow;
+            height: 400px;
+        }
+        .thirdsection{
+            background-color: orange;
+            height: 400px;
+        }
+
+        .box-main{
+            color: black;
+            max-width: 80%;
+            margin: auto;
+            height: 80%;
+        }
+        .firstHalf{
+            float: left;
+            margin-top: 50px;
+            margin-left: 50px;
+        }
+        .text-big{
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            font-size: 35px;
+        }
+        .text-small{
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <ul class="nav-list">
+            <div class="logo">
+                <img src="D:\Reliance-TATA Digital\Nikunj Soni\LVC\CSS-LVC\google.png">
+            </div>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#web">WebTechnology</a></li>
+            <li><a href="#java">JAVA</a></li>
+        </ul>
+        <div class="rightNav">
+            <input type="text" name="search" id="search">
+            <button class="btn btn-sm">Search</button>
+        </div>
+
+        
+    </nav>
+
+    <section class="firstsection">
+        <div class="box-main">
+            <div class="firstHalf">
+                <h1 class="text-big" id="home">HOME SECTION</h1>
+                <p class="text-small">This is HOME Section</p>
+            </div>
+        </div>
+        
+    </section>
+
+    <section class="secondsection">
+        <div class="box-main">
+            <div class="firstHalf">
+                <h1 class="text-big" id="web">WEB TECHNOLOGY SECTION</h1>
+                <p class="text-small">This is WEBTECHNOLOGY Section</p>
+            </div>
+        </div>
+        
+    </section>
+
+    <section class="thirdsection">
+        <div class="box-main">
+            <div class="firstHalf">
+                <h1 class="text-big" id="java">JAVA SECTION</h1>
+                <p class="text-small">This is JAVA Section</p>
+            </div>
+        </div>
+        
+    </section>
+    
+    <footer class="background">
+        <p class="text-footer">
+            Copyright -All Rights Are Reserved | Prepraed By : Nikunj Soni
+        </p>
+
+    </footer>
+     
+     
+</body>
+</html>
